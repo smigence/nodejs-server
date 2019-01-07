@@ -1,0 +1,16 @@
+#svgContainer {
+    background-image: url('/img/hearts.svg');
+    background-size: 50px 150px;
+    width:122px;
+    height:148px;   
+}
+
+.svgChangeColor{
+    fill: blue;
+}
+svg path {
+    fill: tomato;
+}
+svg {
+    height: 50px;
+}
