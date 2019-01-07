@@ -9,7 +9,7 @@
     fill: blue;
 }
 svg path {
-    fill: tomato;
+    fill: rgb(71, 255, 145);
 }
 svg {
     height: 50px;
