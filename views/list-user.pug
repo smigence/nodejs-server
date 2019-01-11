@@ -1,0 +1,23 @@
+html
+    body
+        link(href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css")
+        link(href="/stylesheet/user.css" rel="stylesheet")
+        script(src='//code.jquery.com/jquery-1.11.1.min.js')
+        script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js')
+        // ---- Include the above in your HEAD tag --------
+        .container
+        .row
+            h1
+            | Dynamically blurring avatar images using Canvas.
+        .row
+            each user in users
+                .col-sm-3
+                .card
+                    canvas#header-blur.header-bg(width='250' height='70')
+                    .content
+                    p
+                        | #{user.userName} 
+                        br
+                        |                       #{user.email} 
+                    p
+                        button.btn.btn-default(type='button') Contact

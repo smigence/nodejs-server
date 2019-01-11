@@ -1,10 +1,9 @@
-const express = require("express");
+const express = require('express');
+const controllers = require('../controllers');
 let router = express.Router();
 
-router.get("/", (req, res) => {
-  res.send("Welcome to development server of BLUESK");
-});
-router.post("/", (req, res) => {
+router.get('/', controllers.User.getUser);
+router.post('/', (req, res) => {
   res.json(req.body);
 });
 

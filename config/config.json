@@ -1,0 +1,14 @@
+{
+  "development": {
+    "dialect": "mysql",
+    "mysql": {
+      "host": "localhost",
+      "database": "nodejs_server",
+      "username": "root",
+      "password": ""
+    }
+  },
+  "stage": {},
+  "test": {},
+  "production": {}
+}
