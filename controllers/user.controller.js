@@ -1,9 +1,12 @@
 const userService = require('../services').User;
 
 module.exports = {
-  getUser: (req, res) => {
-    userService.getAll().then(users => {
-      res.render('list-user', {users});
-    });
+  getUser: async (req, res) => {
+    try {
+      const users = await userService.getAll();
+      res.render('list-user', { users });
+    } catch (err) {
+      res.status(500).send(err);
+    }
   }
 };
