@@ -6,7 +6,8 @@
       "database": "nodejs_server",
       "username": "root",
       "password": ""
-    }
+    },
+    "secretKey": "9825b6a9f067979cbb6de10fd253beb8f28750c5"
   },
   "stage": {},
   "test": {},
